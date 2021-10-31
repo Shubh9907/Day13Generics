@@ -12,7 +12,7 @@ public class Main {
         if (max<num3){
             max=num3;
         }
-        System.out.println("The Greatest Integer Number is:- " +max);
+        System.out.println("The Greatest Integer value is:- " +max);
     }
     /*
     Method to find the Greatest of three floats
@@ -25,7 +25,20 @@ public class Main {
         if (max<num3){
             max=num3;
         }
-        System.out.println("The Greatest Float Number is:- "+max);
+        System.out.println("The Greatest Float value is:- "+max);
+    }
+    /*
+    Method to find the Greatest of three Strings
+     */
+    public static void findMaxString(String a,String b,String c){
+        String max=a;
+        if (max.compareTo(b)<0){
+            max=b;
+        }
+        if (max.compareTo(c)<0){
+            max=c;
+        }
+        System.out.println("The Greatest String is:- " +max);
     }
     public static void main(String[] args) {
         System.out.println("Welcome to Test Maximum Program");
@@ -33,5 +46,7 @@ public class Main {
         findMaxInteger(num1,num2,num3);
         float a=76.7f,b=26.6f,c=98.5f;
         findMaxFloat(a,b,c);
+        String s1="future",s2="century",s3="generation";
+        findMaxString(s1,s2,s3);
     }
 }
